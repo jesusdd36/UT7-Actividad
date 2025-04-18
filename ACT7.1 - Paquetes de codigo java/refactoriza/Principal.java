@@ -1,4 +1,12 @@
+/**
+ *
+ * @author Jesús Díaz Delgado y Joel Mata Rodriguez
+ * @version 1.0
+ */
+
 package refactoriza;
+
+
 
 
 import Endes.farmacia.medicamentos.MedicamentoEspecializado;
@@ -8,6 +16,9 @@ import java.util.Map;
 import java.util.Random;
 
 public class Principal {
+
+    /*Comienza el programa*/
+    // Comienza el programa
     public static void main(String[] args) {
         FARMACIA farmacia = new FARMACIA();
         Random random = new Random();
