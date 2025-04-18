@@ -1,7 +1,7 @@
 package refactoriza;
 
-import Endes.medicamentos.MedicamentoEspecializado;
-import Endes.medicamentos.MedicamentoGenerico;
+import Endes.farmacia.medicamentos.MedicamentoEspecializado;
+import Endes.farmacia.medicamentos.medicamentoGenerico;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,59 +18,59 @@ public class FARMACIA {
         FARMACIA farmacia = new FARMACIA();
         Random random = new Random();
 
-        MedicamentoGenerico paracetamol = new MedicamentoGenerico("Paracetamol", 10.0);
+        medicamentoGenerico paracetamol = new medicamentoGenerico("Paracetamol", 10.0);
         farmacia.AgregarMedicamento(paracetamol, 100);
 
         String nombre1 = "Medicamento1";
         double precio1 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico1 = new MedicamentoGenerico(nombre1, precio1);
+        medicamentoGenerico medicamentoGenerico1 = new medicamentoGenerico(nombre1, precio1);
         farmacia.AgregarMedicamento(medicamentoGenerico1, 100);
 
         String nombre2 = "Medicamento2";
         double precio2 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico2 = new MedicamentoGenerico(nombre2, precio2);
+        medicamentoGenerico medicamentoGenerico2 = new medicamentoGenerico(nombre2, precio2);
         farmacia.AgregarMedicamento(medicamentoGenerico2, 100);
 
         String nombre3 = "Medicamento3";
         double precio3 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico3 = new MedicamentoGenerico(nombre3, precio3);
+        medicamentoGenerico medicamentoGenerico3 = new medicamentoGenerico(nombre3, precio3);
         farmacia.AgregarMedicamento(medicamentoGenerico3, 100);
 
         // Medicamento 4
         String nombre4 = "Medicamento4";
         double precio4 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico4 = new MedicamentoGenerico(nombre4, precio4);
+        medicamentoGenerico medicamentoGenerico4 = new medicamentoGenerico(nombre4, precio4);
         farmacia.AgregarMedicamento(medicamentoGenerico4, 100);
 
         String nombre5 = "Medicamento5";
         double precio5 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico5 = new MedicamentoGenerico(nombre5, precio5);
+        medicamentoGenerico medicamentoGenerico5 = new medicamentoGenerico(nombre5, precio5);
         farmacia.AgregarMedicamento(medicamentoGenerico5, 100);
 
         // Medicamento 6
         String nombre6 = "Medicamento6";
         double precio6 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico6 = new MedicamentoGenerico(nombre6, precio6);
+        medicamentoGenerico medicamentoGenerico6 = new medicamentoGenerico(nombre6, precio6);
         farmacia.AgregarMedicamento(medicamentoGenerico6, 100);
 
         String nombre7 = "Medicamento7";
         double precio7 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico7 = new MedicamentoGenerico(nombre7, precio7);
+        medicamentoGenerico medicamentoGenerico7 = new medicamentoGenerico(nombre7, precio7);
         farmacia.AgregarMedicamento(medicamentoGenerico7, 100);
 
         String nombre8 = "Medicamento8";
         double precio8 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico8 = new MedicamentoGenerico(nombre8, precio8);
+        medicamentoGenerico medicamentoGenerico8 = new medicamentoGenerico(nombre8, precio8);
         farmacia.AgregarMedicamento(medicamentoGenerico8, 100);
 
         String nombre9 = "Medicamento9";
         double precio9 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico9 = new MedicamentoGenerico(nombre9, precio9);
+        medicamentoGenerico medicamentoGenerico9 = new medicamentoGenerico(nombre9, precio9);
         farmacia.AgregarMedicamento(medicamentoGenerico9, 100);
 
         String nombre10 = "Medicamento10";
         double precio10 = random.nextDouble() * 100;
-        MedicamentoGenerico medicamentoGenerico10 = new MedicamentoGenerico(nombre10, precio10);
+        medicamentoGenerico medicamentoGenerico10 = new medicamentoGenerico(nombre10, precio10);
         farmacia.AgregarMedicamento(medicamentoGenerico10, 100);
 
         MedicamentoEspecializado insulina = new MedicamentoEspecializado("Insulina", 50.0, "Diabetes");
@@ -127,7 +127,7 @@ public class FARMACIA {
     }
 
     // Metodo para agregar medicamento generico //
-    public void AgregarMedicamento(MedicamentoGenerico medicamento, int cantidad) {
+    public void AgregarMedicamento(medicamentoGenerico medicamento, int cantidad) {
         String nombre = medicamento.nombre;
         if (inventario.containsKey(nombre)) {
             int cantidadExistente = inventario.get(nombre);

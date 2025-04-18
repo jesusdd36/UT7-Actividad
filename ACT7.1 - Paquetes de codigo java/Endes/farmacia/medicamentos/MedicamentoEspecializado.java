@@ -1,4 +1,4 @@
-package Endes.medicamentos;
+package Endes.farmacia.medicamentos;
 
 public class MedicamentoEspecializado extends Medicamentos {
     private String tipo;

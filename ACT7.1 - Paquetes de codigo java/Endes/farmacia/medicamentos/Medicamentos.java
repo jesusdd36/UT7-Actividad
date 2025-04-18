@@ -1,4 +1,4 @@
-package Endes.medicamentos;
+package Endes.farmacia.medicamentos;
 
 public class Medicamentos {
     public String nombre;
