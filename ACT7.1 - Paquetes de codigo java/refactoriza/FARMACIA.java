@@ -9,7 +9,7 @@ import java.util.Random;
 
 
 public class FARMACIA {
-    private Map<String, Integer> inventario;
+    public Map<String, Integer> inventario;
 
     public FARMACIA() {
         this.inventario = new HashMap<>();
